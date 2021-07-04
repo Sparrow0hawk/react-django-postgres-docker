@@ -15,7 +15,7 @@ class Home extends Component {
     }
 
     getStudents = () => {
-        axios.get("/api/student/").then(res => this.setState({ students: res.data}));
+        axios.get("/api/students/").then(res => this.setState({ students: res.data}));
     };
 
     resetState = () => {

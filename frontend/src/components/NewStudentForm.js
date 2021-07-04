@@ -25,7 +25,7 @@ class NewStudentForm extends React.Component {
 
     createStudent = e => {
         e.preventDefault();
-        axios.post("/api/student/", this.state).then(() => {
+        axios.post("/api/students/", this.state).then(() => {
             this.props.resetState();
             this.props.toggle();
         });
@@ -33,7 +33,7 @@ class NewStudentForm extends React.Component {
 
     editStudent = e => {
         e.preventDefault();
-        axios.put("/api/student/" + this.state.pk + this.state).then(() => {
+        axios.put("/api/students/" + this.state.pk + this.state).then(() => {
             this.props.resetState();
             this.props.toggle();
         });
