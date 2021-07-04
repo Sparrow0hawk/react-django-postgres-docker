@@ -12,10 +12,17 @@ An example React-Django multi container app, adapted from https://blog.logrocket
 This should run locally by running:
 
 ```bash
-$ docker-compose up
+# run in a detached state
+$ docker-compose up -d
 ```
 
 Navigate to [localhost](http://localhost) to view the frontend page.
+
+To shutdown and tidy up:
+
+```bash
+$ docker-compose down
+```
 
 ## Deploying to Azure Container Instances 
 
